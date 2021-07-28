@@ -327,21 +327,30 @@ ul {
   margin-bottom: 10px;
   font-size: 24px;
   color: #1A1A1A;
+  line-height: 1.5em;
 }
 .apply .banner h4 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
   font-size: 32px;
   color: #1A1A1A;
-  line-height: 1.4em;
+}
+.apply .group-button{
+  margin-top: 20px;
 }
 .apply .banner a {
   display: inline-block;
-  padding: 12px 40px;
+  padding: 10px 20px;
   border: 1px solid #1A1A1A;
-  border-radius: 24px;
+  border-radius: 10px;
   color: #1A1A1A;
   text-transform: uppercase;
+  margin-right: 15px;
+  min-width: 150px;
+  text-align: center;
+}
+.apply .banner a:hover{
+  background-color: rgba(255, 255, 255, 0.15)
 }
 .apply .banner .icon-right {
   position: absolute;
