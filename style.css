@@ -134,37 +134,13 @@ ul {
   background-image: url("assets/images/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 10px;
+  padding-top: 100px;
   width: 100%;
   padding-bottom: 200px;
   border-radius: 40px;
 }
 .lauches-wrap {
   padding-bottom: 200px;
-}
-.section-banner .launches {
-  display: flex;
-  align-items: center;
-  background-color: #fde6d3;
-  padding: 5px 20px;
-  border-radius: 8px;
-  max-width: 450px;
-  margin: 30px auto;
-}
-.launches img {
-  margin-right: 10px;
-}
-.launches p {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #1A1A1A;
-}
-.launches a {
-  color: #1990ff;
-  margin-left: 10px;
-}
-.launches a:hover {
-  text-decoration: underline;
 }
 
 .content-left h1 {
