@@ -251,10 +251,13 @@
                     <a class="ido-button"
                       href="https://docs.google.com/forms/d/e/1FAIpQLSchJihprfLMjI0Q1FRzgzpoagnjALd0pA1bzXnVpzZvXd_wxw/viewform"
                       target="blank">Apply for IDO</a>
-                    <form action="#" method="POST">
-                      <input type="email" placeholder="Your email" />
-                      <button type="submit">Subscribe</button>
-                    </form>
+                    <div class="group-form">
+                      <form id="subscribe-form" action="https://api.luaswap.org/api/luastarter/email/subscription">
+                        <input type="email" name="email" placeholder="Your email" />
+                        <button type="submit">Subscribe</button>
+                      </form>
+                      <p class="result"></p>
+                    </div>
                     <!-- <a class="subscribe-button" href="#">Subscribe</a> -->
                   </div>
                   <div class="icon-right">
@@ -297,60 +300,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/slick/slick.min.js" id="slick-js"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-      $('.partner-box').slick({
-        dots: true,
-        rows: 2,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-      $('.nav-icon').on('click', function () {
-        let element = $(this).closest('.nav-wrap').find('.navigation');
-        if (element.hasClass('show')) {
-          element.removeClass("show");
-        } else {
-          element.addClass("show");
-        }
-
-      })
-      $('.is-child').on('click', function (e) {
-        e.preventDefault();
-        $(this).find('> ul').toggleClass('dropdown');
-      })
-      jQuery(document).mouseup(function (e) {
-        var container = $(".navigation.show");
-        var icon = $('.icon-mobile');
-
-        // if the target of the click isn't the container nor a descendant of the container
-        if (icon.is(e.target) === false && !container.is(e.target) && container.has(e.target).length === 0) {
-          if (container.hasClass('show')) {
-            container.removeClass("show");
-          } else {
-            container.addClass("show");
-          }
-        }
-      });
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/js.js"></script>
 </body>
 
 </html>

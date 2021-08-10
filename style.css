@@ -342,6 +342,16 @@ ul {
 .apply .icon-right img{
   width: 100%;
 }
+.group-form{
+  position: relative;
+}
+.group-form .result{
+  position: absolute;
+  font-size: 13px!important;
+  bottom: -20px;
+  left: 10px;
+
+}
 .group-button{
   display: flex;
   flex-wrap: wrap;
@@ -365,6 +375,22 @@ ul {
   border: 1px solid #1A1A1A;
   text-transform: uppercase;
   cursor: pointer;
+  min-width: 100px;
+}
+.group-button button img{
+  width: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #1A1A1A;
