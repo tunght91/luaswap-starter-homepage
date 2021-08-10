@@ -281,10 +281,14 @@ ul {
   display: block;
   min-height: 72px;
   border-radius: 15px;
+  position: relative;
 }
 .partner-logo img {
-  margin: 0 auto;
-  padding-top: 6px;
+  max-width: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .apply {
   margin-top: 130px;
@@ -321,9 +325,10 @@ ul {
   border-radius: 10px;
   color: #1A1A1A;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 20px;
   min-width: 150px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .apply .banner a:hover{
   background-color: rgba(255, 255, 255, 0.15)
@@ -332,7 +337,48 @@ ul {
   position: absolute;
   right: 30px;
   top: -70px;
+  width: 200px;
 }
+.apply .icon-right img{
+  width: 100%;
+}
+.group-button{
+  display: flex;
+  flex-wrap: wrap;
+}
+.group-button input{
+  height: 40px;
+  outline: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 10px;
+  background: rgb(234 156 73);
+  padding: 0 15px;
+  min-width: 250px;
+  color: #1a1a1a;
+}
+.group-button button{
+  height: 40px;
+  color: #1A1A1A;
+  border-radius: 10px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid #1A1A1A;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1A1A1A;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #1A1A1A;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #1A1A1A;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #1A1A1A;
+}
+
 /* Footer */
 .footer {
   padding: 10px 0;
@@ -481,8 +527,6 @@ ul.slick-dots {
   }
   /* .section-partner */
   .apply .banner .icon-right {
-    right: 5px;
-    top: auto;
     bottom: 0;
     max-width: 180px;
   }
@@ -508,6 +552,11 @@ ul.slick-dots {
     display: inline-block;
   }
 }
+@media (max-width: 767px) {
+  .apply .banner .icon-right {
+    display: none;
+  }
+}
 @media (max-width: 680px) {
   .sys-box-right .sys-box-item {
     width: 100%;
@@ -515,8 +564,5 @@ ul.slick-dots {
   }
   .become {
     text-align: left;
-  }
-  .apply .banner .icon-right {
-    display: none;
-  }
+  }  
 }
