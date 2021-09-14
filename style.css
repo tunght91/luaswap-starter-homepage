@@ -156,13 +156,18 @@ ul {
   color: #fff;
   line-height: 24px;
 }
-.button {
+.button-ido {
   margin-top: 25px;
   padding: 12px 40px;
-  color: #fff;
-  background-color: rgba(254, 245, 227, 0.15);
+  color: #fff;  
   border: 1px solid #fffcf6;
   border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  
+}
+.button-ido:hover{
+  background-color: rgba(254, 245, 227, 0.15);
 }
 .content-right img {
   width: 100%;
