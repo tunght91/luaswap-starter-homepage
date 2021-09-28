@@ -258,15 +258,34 @@ ul {
 .weight {
   padding-left: 20px;
 }
-.become a {
-  display: inline-block;
-  padding: 15px 100px;
-  text-transform: uppercase;
+.become .stake{
+  display: flex;
+  align-items: center;
+}
+.s-type{
+  margin-bottom: 0;
+}
+.stake a {
+  display: block;
+  padding: 10px 20px;
   background-color: #fabc46;
-  border-radius: 24px;
+  border-radius: 12px;
   margin-top: 20px;
   color: #1a1a1a;
   font-weight: 700;
+  text-align: center;
+}
+.stake a:first-child{
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-right: 20px
+}
+.l-more{
+  margin-top: 25px;
+  padding-left: 10px;
+}
+.l-more:hover{
+  text-decoration: underline;
 }
 /* .section-partner */
 .section-partner {
