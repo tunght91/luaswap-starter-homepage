@@ -41,10 +41,10 @@ jQuery(document).ready(function ($) {
 
     $('.project-box').slick({
         dots: true,
-        rows: 2,
+        rows: 1,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         arrows: false,
         responsive: [
             {

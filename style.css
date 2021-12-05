@@ -256,9 +256,12 @@ ul {
   color: #40d405;
 }
 .project-title{
-  padding: 20px 0;
-  font-size: 25px;
+  padding: 20px 0;  
   font-weight: 500;
+}
+.project-title a{
+  font-size: 25px;
+  color: #fabc46;
 }
 .project-info{
   display: flex;
@@ -696,8 +699,7 @@ ul.slick-dots {
   }
   .section-banner .launches-wrap .content-right {
     display: none;
-  }
-
+  }  
   /* .section-feature */
   .feature-wrap {
     margin-top: -120px;
@@ -759,6 +761,13 @@ ul.slick-dots {
   .footer-social li {
     display: inline-block;
   }
+  .footer-twitter-embed{
+    margin-top: 40px;
+    display: block!important;
+  }
+}
+.footer-twitter-embed{
+  display: none;
 }
 @media (max-width: 767px) {
   .apply .banner .icon-right {
