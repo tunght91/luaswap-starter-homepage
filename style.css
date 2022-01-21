@@ -87,7 +87,7 @@ ul {
 .main-nav .navigation li {
   display: inline-block;
 }
-.main-nav .navigation .nav-ido-button a{
+.main-nav .navigation .nav-ido-button a {
   color: #000;
   background-color: #fff;
   padding-top: 10px;
@@ -165,6 +165,7 @@ ul {
   color: #fff;
   line-height: 24px;
   font-size: 18px;
+  max-width: 648px;
 }
 .button-ido,
 .w-paper {
@@ -177,11 +178,11 @@ ul {
   text-transform: uppercase;
   margin-right: 20px;
 }
-.button-ido{
+.button-ido {
   background-color: #fff;
   color: #000;
 }
-.button-ido:hover{
+.button-ido:hover {
   background-color: rgb(243, 243, 243);
 }
 .w-paper:hover {
@@ -223,16 +224,16 @@ ul {
   line-height: 24px;
 }
 /* .section-project */
-.section-project{
+.section-project {
   padding-bottom: 80px;
 }
 .project-wrap {
   padding-top: 20px;
 }
-.project-item{
+.project-item {
   padding: 0 10px;
 }
-.add-padding{
+.add-padding {
   padding: 15px;
   background-color: rgba(53, 53, 53, 0.7);
   border-radius: 16px;
@@ -240,59 +241,59 @@ ul {
   backdrop-filter: blur(40px);
   margin-bottom: 20px;
 }
-.project-item .header{
+.project-item .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.project-item .header img{
+.project-item .header img {
   max-width: 50px;
   border-radius: 8px;
 }
-.project-item .header .status{
+.project-item .header .status {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #40d4055d;
   color: #40d405;
 }
-.project-title{
-  padding: 20px 0;  
+.project-title {
+  padding: 20px 0;
   font-weight: 500;
 }
-.project-title a{
+.project-title a {
   font-size: 25px;
   color: #fabc46;
 }
-.project-info{
+.project-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.project-info span{
+.project-info span {
   display: block;
 }
-.project-info .text{
+.project-info .text {
   text-transform: uppercase;
 }
-.project-info .network{
+.project-info .network {
   text-align: center;
 }
-.project-info .network img{
+.project-info .network img {
   max-width: 40px;
   margin-top: 10px;
   border-radius: 50%;
 }
-.project-info .raise .text{
+.project-info .raise .text {
   text-transform: uppercase;
 }
-.project-info .raise .number{
+.project-info .raise .number {
   font-size: 30px;
   margin-top: 10px;
 }
-.process .text{
+.process .text {
   text-transform: uppercase;
 }
-.progress-bar{
+.progress-bar {
   height: 15px;
   width: 100%;
   border: 1px solid #fabc46;
@@ -300,30 +301,29 @@ ul {
   overflow: hidden;
   margin: 10px 0;
 }
-.progress-bar .progress-active{
+.progress-bar .progress-active {
   height: 100%;
   background-color: #fabc46;
   display: block;
 }
-.progress-info{
-  
+.progress-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.progress-info span{
+.progress-info span {
   font-size: 20px;
 }
-.progress-footer{
+.progress-footer {
   display: flex;
   padding-top: 15px;
   justify-content: space-between;
   align-items: center;
 }
-.progress-footer .user-number{
-  font-size: 20px;;
+.progress-footer .user-number {
+  font-size: 20px;
 }
-.section-project .slick-dots button{
+.section-project .slick-dots button {
   width: 15px;
   background-color: #1f1f1f;
   height: 5px;
@@ -391,16 +391,16 @@ ul {
   margin-bottom: 0;
   position: relative;
 }
-.s-type:hover .tooltip{
+.s-type:hover .tooltip {
   opacity: 1;
   visibility: visible;
 }
-.s-type img{
+.s-type img {
   margin-bottom: -4px;
   margin-left: 3px;
   cursor: pointer;
 }
-.s-type .tooltip{
+.s-type .tooltip {
   position: absolute;
   max-width: 300px;
   top: 10px;
@@ -552,7 +552,7 @@ ul {
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
-.twitter-embed{
+.twitter-embed {
   padding: 15px;
 }
 /* Safari */
@@ -699,7 +699,7 @@ ul.slick-dots {
   }
   .section-banner .launches-wrap .content-right {
     display: none;
-  }  
+  }
   /* .section-feature */
   .feature-wrap {
     margin-top: -120px;
@@ -708,7 +708,7 @@ ul.slick-dots {
   .feature-wrap .feature-item {
     width: 100%;
     margin-bottom: 40px;
-  }   
+  }
 
   /* .section-system */
   .sys-box-left {
@@ -761,12 +761,12 @@ ul.slick-dots {
   .footer-social li {
     display: inline-block;
   }
-  .footer-twitter-embed{
+  .footer-twitter-embed {
     margin-top: 40px;
-    display: block!important;
+    display: block !important;
   }
 }
-.footer-twitter-embed{
+.footer-twitter-embed {
   display: none;
 }
 @media (max-width: 767px) {
